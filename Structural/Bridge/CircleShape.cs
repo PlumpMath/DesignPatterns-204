@@ -1,6 +1,9 @@
 namespace Bridge {
-	
-	class CircleShape : Shape {
+
+    /// <summary>
+    /// RefinedAbstraction (IconWi n d o w ) — 扩充由Abstraction 定义的接口。 
+    /// </summary>
+    class CircleShape : Shape {
 
 		private readonly double _x;
 		private readonly double _y;
