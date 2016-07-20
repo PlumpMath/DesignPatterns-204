@@ -5,13 +5,15 @@ namespace Observer {
 	public class ConcreteObserver : IObserver {
 		
 		private readonly ConcreteSubject _subject;
+        private readonly string ObserverName;
 
-		public ConcreteObserver(ConcreteSubject subject) {
+		public ConcreteObserver(string ObserverName, ConcreteSubject subject) {
 			this._subject = subject;
+            this.ObserverName = ObserverName;
 		}
 
 		public void Update() {
-			Console.WriteLine("Observer: subject state updated to {0} .", this._subject.State);
+			Console.WriteLine("{0}: subject state updated to {1} .", this.ObserverName, this._subject.State);
 		}
 	}
 }

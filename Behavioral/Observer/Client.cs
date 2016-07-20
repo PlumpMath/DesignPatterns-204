@@ -10,8 +10,8 @@ namespace Observer {
 		static void Main(string[] args) {
 			var subject = new ConcreteSubject();
 
-			subject.Attach(new ConcreteObserver(subject));
-			subject.Attach(new ConcreteObserver(subject));
+			subject.Attach(new ConcreteObserver("Observer1", subject));
+			subject.Attach(new ConcreteObserver("Observer2", subject));
 
 			subject.State = "State1";
 			subject.Notify();
