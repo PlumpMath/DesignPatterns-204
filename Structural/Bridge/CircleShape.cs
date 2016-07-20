@@ -1,7 +1,7 @@
 namespace Bridge {
 
     /// <summary>
-    /// RefinedAbstraction (IconWi n d o w ) — 扩充由Abstraction 定义的接口。 
+    /// RefinedAbstraction (IconWindow) — 扩充由 Abstraction 定义的接口。 
     /// </summary>
     class CircleShape : Shape {
 
